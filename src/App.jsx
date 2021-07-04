@@ -2,7 +2,7 @@ import './App.css';
 import svg from './images/mobile-note-list-animate.svg';
 import app from './images/app.png'
 import logo from './images/logo.png'
-import caracteristics from './images/Vector8.svg'
+import characteristics from './images/characteristics.svg'
 
 function App() {
 
@@ -13,33 +13,31 @@ function App() {
 
 
   return (
-    <div className="container">
-    <div className="circle"></div>
-    <div className="circle2"></div>
-    <div className="circle3"></div>
-    <div className="circle4"></div>
-    <div className="circle5"></div>
-    <div className="circle6"></div>
+    <>
     <div className="shape"></div>
     {/* Inicia container */}
-    <div className="main">
-      <div className="welcome">
-      <div className="text-welcome">
-      <img src={logo} alt="" />
-      <h1>Notorium</h1>
-      <h2>Tu app de Productividad</h2>
-      </div>
-      <img src={app} className="mobile" alt="mobile" />
-      {/* <img src={svg} className="svg-list" alt="" /> */}
-      </div>
-    </div>
-    {/* <div className="app-info">
-      <div className="caracteristics">
-        <img src={caracteristics} className="caracteristics-image" alt="" />
+    <section className="welcome">
+    <nav>
+        <a href="">aa</a>
+      </nav>
+    <main>
+        <div className="text-welcome">
+        <h1>Notorium</h1>
+        <h2>Tu app de Productividad</h2>
+        </div>
+        <div className="image-welcome">
+        <img src={app} className="mobile" alt="mobile" />
+        </div>
+    </main>
+    </section>
+    <section className="app-info">
+      <div className="characteristics">
+        <div className="characteristics-text">
         <h2>Características</h2>
+        </div>
       </div>
-    </div> */}
-    </div>
+    </section>
+    </>
   );
 }
 
