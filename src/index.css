@@ -1,13 +1,176 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html , body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+ }
+
+.container {
+  background-image: url('images/Vector2.svg'), url('images/Vector7.svg');
+  background-position: right, right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 46.39%, 7.77%;
+  height: 152vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.shape {
+  background-image: url('images/svg3.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  left: 11.5rem;
+}
+
+.circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(101, 31, 251, 0.6);
+  position: absolute;
+  right: 50vh;
+  top: 20vh;
+}
+
+.circle2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(101, 31, 251, 0.6);
+  position: absolute;
+  right: 42vh;
+  top: 28vh;
+}
+
+.circle3 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgba(101, 31, 251, 0.6);
+  position: absolute;
+  right: 50vh;
+  top: 35vh;
+}
+
+.circle4 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(143, 91, 255, 0.66);
+  position: absolute;
+  right: 21vh;
+  bottom: 45vh;
+}
+
+.circle5 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(143, 91, 255, 0.66);
+  position: absolute;
+  right: 27vh;
+  bottom: 30vh;
+}
+
+.circle6 {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgba(143, 91, 255, 0.66);
+  position: absolute;
+  right: 15vh;
+  bottom: 15vh;
+}
+
+.main {
+  padding: 5rem 5rem;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.welcome .text-welcome {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 5rem ;
+}
+
+.welcome .text-welcome img {
+  width: 12rem;
+  height: 12rem;
+  padding-left: 10.1rem;
+  
+}
+
+.welcome .text-welcome h1 {
+  font-size: 4.5rem;
+  align-self: center;
+  padding-left: 9rem;
+  margin: .2rem;
+}
+
+.welcome .text-welcome h2 {
+  font-size: 1rem;
+  align-self: center;
+  padding-left: 9rem;
+  margin: .2rem;
+}
+
+.welcome .mobile {
+  width: 15rem;
+  height: 30rem;
+  padding-top: 5rem;
+  padding-left: 22rem;
+  justify-content: right;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.welcome .svg-list {
+  width: 30rem;
+  height: 30rem;
+  padding-left: 12rem;
+  justify-content: right;
+}
+
+.app-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.app-info .caracteristics h2 {
+  font-size: 1rem;
+  align-self: center;
+  padding-left: 9rem;
+  margin: .2rem;
+}
+
+.app-info .caracteristics .caracteristics-image {
+  position: absolute;
+  left: -1vh;
+  width: 35rem;
+  height: 35rem;
 }
