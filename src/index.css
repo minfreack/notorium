@@ -1,189 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-html , body {
-  margin: 0;
-padding: 0;
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-body: #fff;
+    --primary-color: #2e2542;
+    --nav-color: #f5f0f5;
+    --secondary-color: #f5f0ff;
+    --tertiary-color: #e336ff;
+  }
 }
 
-*{
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-body: #2E2542;
+    --primary-color: #f5f0ff;
+    --nav-color: #2e2542;
+    --secondary-color: #f5f0ff;
+    --tertiary-color: #e336ff;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-body)
+}
+
+* {
   font-size: 16px;
 }
 
 body {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
+  padding: 0;
+  margin: 0;
+}
+
+::selection {
+  background-color: var(--secondary-color);
+}
+
+:-moz-selection {
+  background-color: var(--secondary-color);
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
- }
-
-@media only screen and (max-width: 480px) {
-
-  .welcome {
-    background-image: url('images/final-background.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    height: 130vh;
-  }
-
-  .shape {
-    background-image: url('images/svg3.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 17rem;
-    height: 17rem;
-    top: 12rem;
-  }
-} 
-
-@media only screen and (min-width: 480.1px) and (max-width: 767.9px) {
-  .welcome {
-    background-image: url('images/final-background.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 130vh;
-  }
-
-  .shape {
-    background-image: url('images/svg3.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    position: absolute;
-    width: 17rem;
-    height: 17rem;
-    top: 1rem;
-    left: 3rem;
-  }
+  color: var(--primary-color);
+  font-size: 3rem;
+  text-align: center;
+  margin: .5rem;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023.9px) {
-  .welcome {
-    background-image: url('images/final-background.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 67vh;
-  }
-
-  .shape {
-    background-image: url('images/svg3.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 17rem;
-    height: 17rem;
-    top: 1rem;
-    left: 7rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1199.9px) {
-  .welcome {
-    background-image: url('images/final-background.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 50%;
-    height: 130vh;
-  }
-}
-
-@media only screen and (min-width: 1200px)  {
-  .welcome {
-    background-image: url('images/final-background.svg');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 40%;
-    height: 133vh;
-  }
-
-  .shape {
-    background-image: url('images/svg3.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
-    width: 17rem;
-    height: 17rem;
-    top: 1rem;
-    left: 14rem;
-  }
-}
-
-nav {
-  font-size: 10px;
-
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-}
-
-.text-welcome {
-  justify-self: center;
-  padding-top: 5rem ;
-  align-self: center;
-}
-
-.text-welcome h1 {
-  font-size: 4.5rem;
-  align-self: center;
-  margin: .2rem;
-}
-
-.text-welcome h2 {
+h3 {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  align-self: center;
-  margin: .2rem;
+  text-align: center;
 }
 
-.image-welcome {
-  justify-self: center;
+p {
+  color: var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  padding: .6rem;
+  margin: .25rem;
 }
 
-.mobile {
-  width: 15rem;
-  height: 30rem;
-  padding-top: 5rem;
-  justify-content: right;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  
+img {
+  max-width: 100%;
 }
 
-.welcome .svg-list {
-  width: 30rem;
-  height: 30rem;
-  padding-left: 12rem;
-  justify-content: right;
-}
-
-.app-info {
-  display: grid;
-  grid-template-areas: "characteristics blank";
-}
-
-.app-info .characteristics {
-  grid-area: characteristics;
-  display: grid;
-  background-image: url('images/characteristics.svg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 75vh;
-
-}
-
-.app-info .characteristics .characteristics-text {
-  align-self: center;
-  justify-self: center;
-}
-
-.app-info .characteristics .characteristics-text h2 {
-  font-size: 2.5rem;
-}

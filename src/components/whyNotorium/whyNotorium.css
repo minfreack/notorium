@@ -1,0 +1,155 @@
+/* WHY NOTORIUM */
+.why-notorium {
+    display: grid;
+    grid-area: why;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 5rem;
+  }
+  
+  .why-image {
+    background-image: url('../../images/characteristics.svg');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    height: 24rem;
+  }
+  
+  .why-image h2 {
+    padding-top: 5rem;
+    text-align: left;
+    color: var(--secondary-color)
+  }
+  
+  .why-text {
+    display: grid;
+    grid-template-columns: 100%;
+    max-height: 13rem;
+    margin-right: 5rem;
+  }
+  
+  .why-text h2 {
+    text-align: left;
+  }
+  
+  .why-text p {
+    padding-top: .5rem;
+  }
+
+  @media (max-width: 1450px) {
+    /* WHY NOTORIUM */
+    .why-image {
+      background-size: 75%;
+      height: 22rem;
+    }
+  
+    .why-image h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    /* WHY NOTORIUM */
+    .why-image {
+      background-size: 85%;
+      height: 17rem;
+    }
+  
+    .why-image h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    /* WHY NOTORIUM */
+    .why-notorium {
+      padding-top: 1rem;
+    }
+  
+    .why-image {
+      background-size: 85%;
+      height: 15rem;
+    }
+  
+    .why-image h2 {
+      padding-top: 3.5rem;
+      font-size: 1.7rem;
+    }
+  
+    .why-text {
+      margin-right: 1rem;
+    }
+  
+    .why-text h2 {
+     font-size: 2.1rem;
+    }
+  
+    .why-text p {
+     text-align: left;
+     font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    /* WHY NOTORIUM */
+    .why-notorium {
+      padding-top: 1rem;
+    }
+  
+    .why-image {
+      background-size: 85%;
+      background-position: left;
+      height: 12rem;
+    }
+  
+    .why-image h2 {
+      padding-top: 3.5rem;
+      font-size: 1.5rem;
+    }
+  
+    .why-text {
+      margin-right: 1rem;
+      max-height: 18rem;
+    }
+  
+    .why-text h2 {
+     font-size: 2.1rem;
+    }
+  
+    .why-text p {
+     text-align: left;
+     font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    /* WHY NOTORIUM */
+    .why-notorium {
+      padding-top: 1rem;
+      grid-template-columns: 100%;
+    }
+  
+    .why-image {
+      background-size: 75%;
+      background-position: left;
+      height: 15rem;
+    }
+  
+    .why-image h2 {
+      padding-top: 4.5rem;
+      font-size: 1.7rem;
+    }
+  
+    .why-text {
+      margin-right: 1rem;
+      max-height: 17rem
+    }
+  
+    .why-text h2 {
+     font-size: 2.1rem;
+    }
+  
+    .why-text p {
+     text-align: left;
+     font-size: 1rem;
+    }
+  }
+  

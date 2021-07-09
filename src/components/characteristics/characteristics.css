@@ -1,0 +1,149 @@
+/* CHARACTERISTICS HEADER */
+.characteristics {
+    display: grid;
+    grid-area: characteristics;
+    grid-template-columns: repeat(2, 50%);
+    padding-top: 5rem;
+    height: 24rem;
+  }
+  
+  .characteristics-image {
+    background-image: url('../../images/section-inverted.svg');
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: right;
+  }
+  
+  .characteristics-image h2 {
+    padding-top: 5rem;
+    padding-right: 4.5rem;
+    text-align: right;
+    color: var(--secondary-color)
+  }
+  
+  .characteristics-text {
+    display: grid;
+    grid-template-columns: 100%;
+    max-height: 13rem;
+    margin-left: 5rem;
+  }
+  
+  .characteristics-text h2 {
+    text-align: left;
+  }
+  
+  .characteristics-text p {
+    padding-top: .5rem;
+  }
+  
+  @media (max-width: 1450px) {
+    /* CHARACTERISTICS */
+    .characteristics-image {
+      background-size: 75%;
+      height: 22rem;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    /* CHARACTERISTICS */
+    .characteristics-image {
+      background-size: 85%;
+      height: 19rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    /* CHARACTERISTICS */
+    .characteristics {
+      padding-top: 1rem;
+    }
+  
+    .characteristics-image {
+      background-size: 85%;
+      height: 15rem;
+    }
+  
+    .characteristics-image h2 {
+      padding-top: 3.5rem;
+      font-size: 1.7rem;
+    
+    }
+  
+    .characteristics-text {
+      margin-left: .1rem;
+      max-height: 16rem;
+    }
+  
+    .characteristics-text h2 {
+      font-size: 2.1rem;
+     }
+   
+     .characteristics-text p {
+      text-align: left;
+      font-size: 1rem;
+     }
+  }
+  
+  @media (max-width: 800px) {
+    /* CHARACTERISTICS */
+    .characteristics-image {
+      background-size: 85%;
+      background-position: right;
+      height: 15rem;
+    }
+  
+    .characteristics-image h2 {
+      padding-top: 5rem;
+      font-size: 1.7rem;
+      margin-left: 4rem;
+    
+    }
+  
+    .characteristics-text {
+      margin-left: .1rem;
+      max-height: 18rem;
+    }
+  
+    .characteristics-text h2 {
+      font-size: 2.1rem;
+     }
+   
+     .characteristics-text p {
+      text-align: left;
+      font-size: 1rem;
+     }
+  }
+  
+  @media (max-width: 540px) {
+    /* CHARACTERISTICS */
+    .characteristics {
+      grid-template-columns: 100%;
+    }
+  
+    .characteristics-image {
+      background-size: 75%;
+      background-position: right;
+      height: 15rem;
+    }
+  
+    .characteristics-image h2 {
+      padding-top: 3.5rem;
+      font-size: 1.7rem;
+    
+    }
+  
+    .characteristics-text {
+      margin-left: .1rem;
+      max-height: 16rem;
+    }
+  
+    .characteristics-text h2 {
+      font-size: 2.1rem;
+     }
+   
+     .characteristics-text p {
+      text-align: left;
+      font-size: 1rem;
+     }
+  }
+  

@@ -1,0 +1,17 @@
+
+    .main-container {
+        background-image: url('../../images/loginbg_top.svg'), url('../../images/loginbg_bot.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-size: 20%, 20%;
+        background-position: top right, bottom left;
+        display: grid;
+        grid-template-areas:
+        "login"
+        ;
+        grid-template-columns: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-content: center;
+      }
+
+      

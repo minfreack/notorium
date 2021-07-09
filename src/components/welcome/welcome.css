@@ -1,0 +1,459 @@
+  .main-section {
+    display: grid;
+    grid-area: main;
+    grid-template-areas: 
+    "nav nav"
+    "welcome welcome";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 70px auto ;
+  }
+  /* MENÚ */
+  .menu {
+    display: grid;
+    grid-area: nav;
+    grid-template-columns: 35% 65%;
+    margin-top: 2rem;
+  }
+  
+  .menu-logo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem ;
+    animation-name: opening-logo;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .nav-bar {
+    justify-self: left;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    animation: fadeIn 1.5s;
+  }
+  
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @keyframes opening-logo {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  /* MAIN WELCOME */
+  .main-welcome {
+    padding-top: 2rem;
+    display: grid;
+    grid-area: welcome;
+    grid-template-columns: 60% 40%;
+    margin-top: 2rem;
+  }
+  
+  .welcome-text {
+    justify-self: center;
+  }
+  
+  .svg_welcome {
+    width: 80%;
+  }
+  
+  .welcome-image img {
+    width: 45%;
+    height: 90%;
+  }
+  .menu a {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 0.625rem;
+  }
+  
+  .menu a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    border-bottom: solid 0.0625rem var(--secondary-color);
+    transition: .6s;
+  }
+  
+  .menu a:hover::after {
+    width: 100%;
+    transition: .6s;
+  }
+  
+  @media (max-width: 1280px) {
+    .main-section {
+      grid-template-areas: 
+      "nav nav"
+      "welcome welcome";
+      
+      grid-template-rows: auto auto ;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu-mobile {
+      display: block;
+    }
+  
+    .menu-mobile .menu-header {
+      display: grid;
+      grid-area: nav;
+      grid-template-columns: 100% 100%;
+    }
+  
+    .menu-mobile a {
+      color: var(--nav-color);
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.625rem;
+    }
+    
+    .menu-logo {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      justify-self: left;
+    }
+  
+    .menu-ham {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      justify-self: right;
+    }
+    
+    
+    .nav-bar-mobile {
+      display: none;
+      
+    }
+    
+    .mobile-ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      gap: .2em;
+      animation: fadeIn 1.5s;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-item {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a:hover::after {
+      width: 0%;
+      transition: .6s;
+    }
+  
+    .main-welcome {
+      padding-top: .2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: auto auto ;
+      margin-top: .2rem;
+    }
+  
+    .welcome-image{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .main-section {
+      grid-template-areas: 
+      "nav nav"
+      "welcome welcome";
+      
+      grid-template-rows: auto auto ;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu-mobile {
+      display: block;
+    }
+  
+    .menu-mobile .menu-header {
+      display: grid;
+      grid-area: nav;
+      grid-template-columns: 100% 100%;
+    }
+  
+    .menu-mobile a {
+      color: var(--nav-color);
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.625rem;
+    }
+    
+    .menu-logo {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      justify-self: left;
+    }
+  
+    .menu-ham {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      justify-self: right;
+    }
+    
+    
+    .nav-bar-mobile {
+      display: none;
+      
+    }
+    
+    .mobile-ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      gap: .2em;
+      animation: fadeIn 1.5s;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-item {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a:hover::after {
+      width: 0%;
+      transition: .6s;
+    }
+  
+    .main-welcome {
+      padding-top: .2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: auto auto ;
+      margin-top: .2rem;
+    }
+  
+    .welcome-image{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .main-section {
+      grid-template-areas: 
+      "nav nav"
+      "welcome welcome";
+      
+      grid-template-rows: auto auto ;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu-mobile {
+      display: block;
+    }
+  
+    .menu-mobile .menu-header {
+      display: grid;
+      grid-area: nav;
+      grid-template-columns: 100% 100%;
+    }
+  
+    .menu-mobile a {
+      color: var(--nav-color);
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.625rem;
+    }
+    
+    .menu-logo {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      justify-self: left;
+    }
+  
+    .menu-ham {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      justify-self: right;
+    }
+    
+    
+    .nav-bar-mobile {
+      display: none;
+      
+    }
+    
+    .mobile-ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      gap: .2em;
+      animation: fadeIn 1.5s;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-item {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a:hover::after {
+      width: 0%;
+      transition: .6s;
+    }
+  
+    .main-welcome {
+      padding-top: .2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: auto auto ;
+      margin-top: .2rem;
+    }
+  
+    .welcome-image{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .main-section {
+      grid-template-areas: 
+      "nav"
+      "welcome";
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto ;
+    }
+  
+    .menu {
+      display: none;
+    }
+  
+    .menu-mobile {
+      display: block;
+    }
+  
+    .menu-mobile .menu-header {
+      display: grid;
+      grid-area: nav;
+      grid-template-columns: 50% 50%;
+    }
+  
+    .menu-mobile a {
+      color: var(--nav-color);
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.625rem;
+    }
+    
+    .menu-logo {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      justify-self: left;
+    }
+  
+    .menu-ham {
+      width: 2rem;
+      height: 2rem;
+      margin-top: 1.5rem;
+      margin-right: 2rem;
+      justify-self: right;
+    }
+    
+    
+    .nav-bar-mobile {
+      display: none;
+      
+    }
+    
+    .mobile-ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      gap: .2em;
+      animation: fadeIn 1.5s;
+      background-color: var(--primary-color);
+    }
+  
+    .nav-item {
+      display: block;
+      text-align: center;
+    }
+  
+    .menu a:hover::after {
+      width: 0%;
+      transition: .6s;
+    }
+  
+    .main-welcome {
+      padding-top: .2rem;
+      display: grid;
+      grid-area: welcome;
+      grid-template-columns: 100%;
+      margin-top: .2rem;
+    }
+  
+    .welcome-image{
+      display: flex;
+      justify-content: center;
+    }
+  }
+  

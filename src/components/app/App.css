@@ -1,0 +1,64 @@
+
+.main-container {
+    background-image: url('../../images/mainVector.svg');
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: top right;
+    display: grid;
+    grid-template-areas:
+    "main main"
+    "why why"
+    "characteristics characteristics"
+    "characteristics-items characteristics-items"
+    ;
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  
+  @media (max-width: 1280px) {
+    .main-container {
+      grid-template-areas:
+      "main main"
+      "why why"
+      "characteristics characteristics"
+      "characteristics-items characteristics-items"
+      ;
+      grid-template-columns: 1fr;  
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .main-container {
+      grid-template-areas:
+      "main main"
+      "why why"
+      "characteristics characteristics"
+      "characteristics-items characteristics-items"
+      ;
+      grid-template-columns: 1fr;  
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .main-container {
+      grid-template-areas:
+      "main main"
+      "why why"
+      "characteristics characteristics"
+      "characteristics-items characteristics-items"
+      ;
+      grid-template-columns: 1fr;  
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .main-container {
+      grid-template-areas:
+      "main"
+      "why"
+      "characteristics"
+      "characteristics-items"
+      ;
+      grid-template-columns: 1fr;  
+    }
+  }
